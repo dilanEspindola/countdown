@@ -120,7 +120,7 @@
   }
 }
 
-@media (min-width: 421px) and (max-width: 599px) {
+@media screen and(min-width: 421px) and (max-width: 599px) {
   .countdown-container {
     width: 90%;
     height: 98vh;
@@ -145,7 +145,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 799px) {
+@media screen and (min-width: 600px) and (max-width: 799px) {
   .countdown-container {
     width: 90%;
     height: 98vh;
@@ -170,7 +170,7 @@
   }
 }
 
-@media (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 800px) and (max-width: 1023px) {
   .countdown-container {
     width: 90%;
     height: 98vh;
