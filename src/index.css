@@ -30,3 +30,21 @@
   height: 100vh;
   background-size: cover;
 }
+
+@media screen and (min-width: 600px) and (max-width: 799px) and (orientation: landscape) {
+  .App {
+    height: 130vh;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1023px) and (orientation: landscape) {
+  .App {
+    height: 150vh;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .App {
+    height: 130vh;
+  }
+}
