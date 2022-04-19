@@ -120,7 +120,7 @@
   }
 }
 
-@media screen and(min-width: 421px) and (max-width: 599px) {
+@media (min-width: 421px) and (max-width: 599px) {
   .countdown-container {
     width: 90%;
     height: 98vh;
@@ -145,7 +145,32 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 799px) {
+@media (min-width: 600px) and (max-width: 799px) {
+  .countdown-container {
+    width: 90%;
+    height: 98vh;
+  }
+  .content-time {
+    max-width: 120px;
+  }
+  .content-time > p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .countdown {
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .countdown .time {
+    width: 100%;
+    height: 120px;
+  }
+  .countdown .time p {
+    font-size: 45px;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) and (orientation: portrait) {
   .countdown-container {
     width: 90%;
     height: 98vh;
@@ -170,7 +195,7 @@
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+@media (min-width: 800px) and (max-width: 1023px) {
   .countdown-container {
     width: 90%;
     height: 98vh;
@@ -192,5 +217,19 @@
   }
   .countdown .time p {
     font-size: 65px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) and (orientation: landscape) {
+  .countdown {
+    margin-top: 110px;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) and (orientation: portrait) {
+  .countdown {
+    margin-top: 110px;
+    gap: 10px;
   }
 }
