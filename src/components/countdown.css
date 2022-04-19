@@ -1,0 +1,196 @@
+.countdown-container {
+  /* padding-top: 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  width: 50%;
+  max-width: 1440px;
+  height: 99vh;
+  margin: 0 auto;
+}
+
+.countdown-container h1 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 4px;
+  word-spacing: 1px;
+  position: relative;
+  top: 20%;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  width: 100%;
+}
+
+.content-time {
+  text-align: center;
+  max-width: 160px;
+}
+
+.countdown .time {
+  background: linear-gradient(to bottom, #2c2c44 50%, #34364f 50%);
+  box-shadow: 0 9px 0px 0px rgba(0, 0, 0);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  border-radius: 8px;
+}
+.countdown .time::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  left: 0;
+  top: 45%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: #000;
+}
+.countdown .time::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  right: 0;
+  top: 45%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background: #000;
+}
+
+.countdown .time p {
+  font-size: 80px;
+  color: var(--soft-red);
+  font-weight: 700;
+}
+
+.content-time > p {
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+
+.social-networks {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 40px;
+}
+
+.social-networks span i {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all ease-in 0.3s;
+}
+.social-networks span i:hover {
+  color: var(--soft-red);
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .countdown-container {
+    width: 90%;
+    height: 98vh;
+  }
+  .content-time {
+    max-width: 70px;
+  }
+  .content-time > p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .countdown {
+    gap: 10px;
+  }
+  .countdown .time {
+    width: 100%;
+    height: 70px;
+  }
+  .countdown .time p {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 599px) {
+  .countdown-container {
+    width: 90%;
+    height: 98vh;
+  }
+  .content-time {
+    max-width: 90px;
+  }
+  .content-time > p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .countdown {
+    gap: 10px;
+  }
+  .countdown .time {
+    width: 100%;
+    height: 90px;
+  }
+  .countdown .time p {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  .countdown-container {
+    width: 90%;
+    height: 98vh;
+  }
+  .content-time {
+    max-width: 120px;
+  }
+  .content-time > p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .countdown {
+    gap: 10px;
+  }
+  .countdown .time {
+    width: 100%;
+    height: 120px;
+  }
+  .countdown .time p {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+  .countdown-container {
+    width: 90%;
+    height: 98vh;
+  }
+  .content-time {
+    max-width: 150px;
+  }
+  .content-time > p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .countdown {
+    gap: 10px;
+  }
+  .countdown .time {
+    width: 100%;
+    height: 150px;
+  }
+  .countdown .time p {
+    font-size: 65px;
+  }
+}
